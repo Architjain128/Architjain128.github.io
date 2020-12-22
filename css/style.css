@@ -1366,13 +1366,17 @@ footer .credits a {
 #formcc{
   z-index: 15;
 }
+#gal_2 li a{
+  font-size: 20px;
+}
 #concal {
   color: #fff;
   background-color:#fc3636;
   border-radius: 50%;
   width: 30px;
   height: 30px;
-  padding-top: 2px;
+  padding-top: 3px;
+  padding-right: 7px;
 }
 form{
   background-color: #7a7a7a;
@@ -1773,6 +1777,11 @@ h2.testimonials {
   height: 55px;
   padding: 15px;
   
+}
+.social-links a {
+  color: white;
+  font-size: 15px;
+  padding: 10px 15px 10px 15px;
 }
 .archit_sk_icon:hover{
   background-color: #000;
@@ -2329,6 +2338,7 @@ h2.testimonials {
   #gal_2 li a{
     font-size: 15px;
   }
+ 
 }
 
 
