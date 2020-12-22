@@ -1366,9 +1366,7 @@ footer .credits a {
 #formcc{
   z-index: 15;
 }
-#gal_2 li a{
-  font-size: 20px;
-}
+
 #concal {
   color: #fff;
   background-color:#fc3636;
@@ -1783,9 +1781,7 @@ h2.testimonials {
   font-size: 15px;
   padding: 10px 15px 10px 15px;
 }
-#gal_2 li a{
-  font-size: 20px;
-}
+
 .archit_sk_icon:hover{
   background-color: #000;
   color: #fff;
@@ -1988,7 +1984,12 @@ h2.testimonials {
 {
   display: none;
 }
-
+#gal_2{
+  display: block;
+}
+#gal_2 li a{
+  font-size: 20px;
+}
 @media (min-width: 992px) {
   .testimonial-box .description {
     padding: 0 8rem;
