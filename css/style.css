@@ -1783,6 +1783,9 @@ h2.testimonials {
   font-size: 15px;
   padding: 10px 15px 10px 15px;
 }
+#gal_2 li a{
+  font-size: 20px;
+}
 .archit_sk_icon:hover{
   background-color: #000;
   color: #fff;
