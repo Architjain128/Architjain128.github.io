@@ -4,8 +4,7 @@
   <meta charset="utf-8">
   <title>Hi! I'm Archit</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  
-  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
@@ -23,6 +22,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link href="css/style.css" rel="stylesheet">
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script>
     function sendmail(a,b,c,d){
       let data ={
@@ -34,16 +34,17 @@
       console.log(data)
       axios.post('https://zzmailer.herokuapp.com/send', data)
       .then((res) => {
-        alert("Sent")
+        alert("ok8")
         console.log(res.data)
       })
       .catch((error) => {
-        alert("Error, try again")
+        alert("ok9")
         console.log(error)
       })
-      
+      alert("ok")
+      // location.replace=''
     }
-  
+    sendmail("khb")
   </script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
   <!-- Main Stylesheet File -->
@@ -536,7 +537,7 @@
             <i id="concal" class="fa fa-times cancel archit_grid-item" aria-hidden="true" style="cursor: pointer;"  onclick="toggle_visibility('formcc')"></i>
           </div>
           <br/><input type="text" id="contact-msgNAME" placeholder="Name" name="Name" required /><br/>
-          <input type="text" id="contact-msgEMAIL" placeholder="E-Mail/Contact Number" name="E-Mail" required /><br/>
+          <input type="text" id="contact-msgEMAIL" placeholder="E-Mail" name="E-Mail" required /><br/>
           <input type="text" id="contact-msgSUB" placeholder="Subject" name="Subject" /><br/>
           <textarea rows="3" id="contact-msgMSG" placeholder="Your message" name="Message" required></textarea><br/>
           <button type="submit">Send</button>

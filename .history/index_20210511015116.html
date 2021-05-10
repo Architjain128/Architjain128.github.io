@@ -34,11 +34,11 @@
       console.log(data)
       axios.post('https://zzmailer.herokuapp.com/send', data)
       .then((res) => {
-        alert("Sent")
+        alert("ok8")
         console.log(res.data)
       })
       .catch((error) => {
-        alert("Error, try again")
+        alert("ok9")
         console.log(error)
       })
       
@@ -536,7 +536,7 @@
             <i id="concal" class="fa fa-times cancel archit_grid-item" aria-hidden="true" style="cursor: pointer;"  onclick="toggle_visibility('formcc')"></i>
           </div>
           <br/><input type="text" id="contact-msgNAME" placeholder="Name" name="Name" required /><br/>
-          <input type="text" id="contact-msgEMAIL" placeholder="E-Mail/Contact Number" name="E-Mail" required /><br/>
+          <input type="text" id="contact-msgEMAIL" placeholder="E-Mail" name="E-Mail" required /><br/>
           <input type="text" id="contact-msgSUB" placeholder="Subject" name="Subject" /><br/>
           <textarea rows="3" id="contact-msgMSG" placeholder="Your message" name="Message" required></textarea><br/>
           <button type="submit">Send</button>
