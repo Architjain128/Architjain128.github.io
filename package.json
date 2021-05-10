@@ -1,0 +1,27 @@
+{
+  "name": "architjain128.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "node-mailjet": "^3.3.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Architjain128/Architjain128.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Architjain128/Architjain128.github.io/issues"
+  },
+  "homepage": "https://github.com/Architjain128/Architjain128.github.io#readme"
+}

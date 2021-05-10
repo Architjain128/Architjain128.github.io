@@ -62,13 +62,16 @@
 })(jQuery)
 
 let project_descriptions = {
+    "jodar": `<br/>A platform where job recruiters can post the jobs and applicant can apply for it and then recruiter can shortlist/reject/accept there application based on applicant's skills and resume.`,
+    "amongthem": `<br/>A game inspired from Among Us were player have to go from one exit to other in random maze and collect objects to increse the points and stay away from imposter wich will be moving towards you from shortest path possible.`,
     "covid": `<br/>Working as a Frontend Open Source contributor for a multidisciplinary volunteer team on technology enabled response to the COVID19 pandemic in India.`,
     "osdg": `<br/>Contributed as a Full stack developer for my college’s club website as summer activity with a team of batchmates under mentorship of seniors.`,
     "dbms": `<br/>Collaborated on a command line applications to be used to perform CRUD operations on a database of a Hotel Managnement company.`,
     "xv6": `<br/>Tweaked the xv6 Operating System to add several new scheduling algorithms, namely first-cum-first-serve, priority-based and multi-level-feedback-queue, along with a couple of system calls.`,
     "multi": `<br/>Used concepts of multithreading, mutex locks, semaphores, and process synchronization to implement two real-life systems.`,
     "shell": `<br/>A command-line interface based on the Unix Bash shell. Supports multiple commands per line, signal handling, and chained redirection and piping.`,
-    "joystick": `<br/>Created a river crossing game as a part of Intro to Software Systems course in Python, and using the PyGame library <br><br>This is a two-player game, with increasing difficulty as the game progresses. The aim is to dodge the moving and fixed obstacles and reach the other end.`
+    "joystick": `<br/>Created a river crossing game as a part of Intro to Software Systems course in Python, and using the PyGame library <br><br>This is a two-player game, with increasing difficulty as the game progresses. The aim is to dodge the moving and fixed obstacles and reach the other end.`,
+    "skyfall": `<br/>Created a river crossing game as a part of Intro to Software Systems course in Python, and using the PyGame library <br><br>This is a two-player game, with increasing difficulty as the game progresses. The aim is to dodge the moving and fixed obstacles and reach the other end.`
 }
 
 
@@ -83,7 +86,7 @@ function henlo(txt, img){
     )
 }
 
-function generateHtml(title, tech, img, gh = "#", lnk = "#"){
+function generateHtml(title, tech, img, gh = "#", lnk = "#",demo="#"){
    
     let final = ""
     let gh_shiz = ""
@@ -126,6 +129,7 @@ function generateHtml(title, tech, img, gh = "#", lnk = "#"){
             </div>`
 
     img = "img/gallery/" + img + ".png"
+    // img = "img/gallery/" + img + ".jpg"
 
 
 
