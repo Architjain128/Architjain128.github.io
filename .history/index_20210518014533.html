@@ -580,11 +580,11 @@
               Subject:c,
               Message:d
             }
-            toggle_visibility('formcc')
             axios.post(mURL, data)
             .then((res) => {
               alert("Sent")
               console.log(res.data)
+              toggle_visibility('formcc')
             })
             .catch((error) => {
               alert("Error, try again later")
