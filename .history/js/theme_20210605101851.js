@@ -73,7 +73,7 @@ let project_descriptions = {
     "joystick": `<br/>Created a river crossing game as a part of Intro to Software Systems course in Python, and using the PyGame library <br><br>This is a two-player game, with increasing difficulty as the game progresses. The aim is to dodge the moving and fixed obstacles and reach the other end.`,
     "skyfall": `<br/>A 3D web-based game were user have limited missiles to explode enemy planes and have to dodge bunch of obstacles as game progress.`,
     "bestie": `<br/>A flutter android app where users can call over internet to a verified expert to discuss about a specifics topic and charged per minute basis.`,
-    "kwazy":`<br/>A terminal based python game similar to classic DX-Ball with bunch of different powerups and obstacles.`,
+    "kwazy":`<br/>A terminal based python game similar to classic DX-Ball with bunch of different powerups and obstacles.`
     "mlalgo":`<br/>Compilation of implementation of various machine learning algorithms and concepts including genetic algorithm, linearregression and analysis of bias-variance trends, value iteration, decision trees and POMDP.`
 }
 

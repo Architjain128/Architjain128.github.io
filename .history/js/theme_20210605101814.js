@@ -71,10 +71,10 @@ let project_descriptions = {
     "multi": `<br/>Used concepts of multithreading, mutex locks, semaphores, and process synchronization to implement two real-life systems.`,
     "shell": `<br/>A command-line interface based on the Unix Bash shell. Supports multiple commands per line, signal handling, and chained redirection and piping.`,
     "joystick": `<br/>Created a river crossing game as a part of Intro to Software Systems course in Python, and using the PyGame library <br><br>This is a two-player game, with increasing difficulty as the game progresses. The aim is to dodge the moving and fixed obstacles and reach the other end.`,
-    "skyfall": `<br/>A 3D web-based game were user have limited missiles to explode enemy planes and have to dodge bunch of obstacles as game progress.`,
+    "skyfall": `<br/>A 3D web-based game were user have limited missiles to explode enemy planes and have to dodge bunch of obstacles as game progress`,
     "bestie": `<br/>A flutter android app where users can call over internet to a verified expert to discuss about a specifics topic and charged per minute basis.`,
-    "kwazy":`<br/>A terminal based python game similar to classic DX-Ball with bunch of different powerups and obstacles.`,
-    "mlalgo":`<br/>Compilation of implementation of various machine learning algorithms and concepts including genetic algorithm, linearregression and analysis of bias-variance trends, value iteration, decision trees and POMDP.`
+    "kwazy":`<br/>A terminal based python game similar to classic DX-Ball with bunch of different powerups and obstacles.`
+    "mlalgo":`<br/>A terminal based python game similar to classic DX-Ball with bunch of different powerups and obstacles.`
 }
 
 
