@@ -1648,128 +1648,47 @@ text-shadow:0.8px 0.7px #212121;
   margin: auto;
   padding: auto;
 }
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-body {
-  background: #212121;
-  font-family: 'Roboto', sans-serif;
-}
-.scroll-down {
-  bottom: 0;
+
+.scroll-down{
+  bottom :0;
   height: 100px;
-  left: 0;
-  position: absolute;
-  right: 0;
+  left :0;
+  position :absolute;
+  right :0;
   text-align: center;
-  z-index: 1;
+  z-index :auto;
 }
-.scroll-down-text {
+.scroll-down-text{
   color: #d8d8d8;
   font-weight: bold;
 }
-.scroll-down-bar {
-  background: #d8d8d8;
+
+.scroll-down-bar{
+  background :#d8d8d8;
   bottom: 0;
   display: inline-block;
   height: 65px;
   left: 0;
   margin: 0 auto;
-  position: absolute;
+  position :absolute;
   right: 0;
-  width: 2px;
+  width :2px;
 }
-.scroll-down-bar::before {
-  animation: scrollBall 1.5s ease-in-out infinite;
-  background: #ab987a;
-  border-radius: 50%;
-  content: '';
-  display: inline-block;
-  height: 10px;
-  left: calc(50% - 5px);
-  position: absolute;
-  top: 10px;
-  width: 10px;
+.scroll-down-bar::before{
+    animation :scrollBall 1.5s ease-in-out infinite;
+    background :#ab987a;
+    border-radius: 50%;
+    content :'';
+    display :inline-block;
+    height :10px;
+    left :calc(50% - 5px);
+    position :absolute;
+    top :10px;
+    width :10px;
 }
-@-moz-keyframes scrollBall {
-  40%, 60% {
-    transform: translateY(32px);
-  }
-}
-@-webkit-keyframes scrollBall {
-  40%, 60% {
-    transform: translateY(32px);
-  }
-}
-@-o-keyframes scrollBall {
-  40%, 60% {
-    transform: translateY(32px);
-  }
-}
-@keyframes scrollBall {
-  40%, 60% {
-    transform: translateY(32px);
-  }
-}
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-body {
-  background: #212121;
-  font-family: 'Roboto', sans-serif;
-}
-.scroll-down {
-  bottom: 0;
-  height: 100px;
-  left: 0;
-  position: absolute;
-  right: 0;
-  text-align: center;
-  z-index: 1;
-}
-.scroll-down-text {
-  color: #d8d8d8;
-  font-weight: bold;
-}
-.scroll-down-bar {
-  background: #d8d8d8;
-  bottom: 0;
-  display: inline-block;
-  height: 65px;
-  left: 0;
-  margin: 0 auto;
-  position: absolute;
-  right: 0;
-  width: 2px;
-}
-.scroll-down-bar::before {
-  animation: scrollBall 1.5s ease-in-out infinite;
-  background: #ab987a;
-  border-radius: 50%;
-  content: '';
-  display: inline-block;
-  height: 10px;
-  left: calc(50% - 5px);
-  position: absolute;
-  top: 10px;
-  width: 10px;
-}
-@-moz-keyframes scrollBall {
-  40%, 60% {
-    transform: translateY(32px);
-  }
-}
-@-webkit-keyframes scrollBall {
-  40%, 60% {
-    transform: translateY(32px);
-  }
-}
-@-o-keyframes scrollBall {
-  40%, 60% {
-    transform: translateY(32px);
-  }
-}
-@keyframes scrollBall {
-  40%, 60% {
-    transform: translateY(32px);
-  }
-}
+@keyframes scrollBall{}
+  40%, 60%
+    transform translateY(32px)
 
 .fa-chevron-down {
   color: #fff !important;
