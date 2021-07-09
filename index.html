@@ -426,9 +426,10 @@
           <div id="gal_1" class="gallery_filter list" >
             <select id="archit_xy">
               <option  class="active" value="*" data-filter="*" ><a  href="#">All</a></option>
+              <option  value=".auto" data-filter=".inte"><a  >Work Experience</a></option>
+              <option  value=".auto" data-filter=".auto"><a  >Open Source</a></option>
               <option  value=".web" data-filter=".web"><a >Frontend</a></option>
               <option  value=".app" data-filter=".app"><a >Backend</a></option>
-              <option  value=".auto" data-filter=".auto"><a  >Open Source</a></option>
               <option  value=".cli" data-filter=".cli"><a >CLI</a></option>
               <option  value=".os" data-filter=".os"><a >Operating System</a></option>
               <option  value=".misc" data-filter=".misc"><a >Game</a></option>
@@ -439,9 +440,10 @@
           </div>
             <ul  id="gal_2" class="gallery_filter list" >
                 <li  class="active" data-filter="*" ><a  href="#">All</a></li>
+                <li  data-filter=".inte"><a >Work Experience</a></li>
+                <li  data-filter=".auto"><a  >Open Source</a></li>
                 <li  data-filter=".web"><a >Frontend</a></li>
                 <li  data-filter=".app"><a >Backend</a></li>
-                <li  data-filter=".auto"><a  >Open Source</a></li>
                 <li  data-filter=".cli"><a >CLI</a></li>
                 <li  data-filter=".os"><a >Operating System</a></li>
                 <li  data-filter=".misc"><a >Game</a></li>
@@ -477,6 +479,19 @@
               </div>
           </div>
       </div>
+      <div class="col-lg-4 col-md-4 col-sm-6 misc inte">
+        <div class="h_gallery_item">
+            <div class="g_img_item" onclick="generateHtml('IIITH - Healthcare Platform', 'MERN Stack', 'health')">
+                <img class="img-fluid" src="img/gallery/health.png" alt="">
+                <a id="intern">WORK EXPERIENCE</a><br/>
+                <a class="light"><img src="img/gallery/icon.png" alt=""></a>
+            </div>
+            <div class="g_item_text">
+                <h4>IIITH - Healthcare Platform</h4>
+                <p>MERN Stack</p>
+            </div>
+        </div>
+    </div>
       <div class="col-lg-4 col-md-4 col-sm-6 ml">
         <div class="h_gallery_item">
             <div class="g_img_item" onclick="generateHtml('Machine Learning Algorithms', 'Python','mlalgo', 'https://github.com/Architjain128/MachineLearningAlgo')">
@@ -489,11 +504,12 @@
             </div>
         </div>
     </div>
-            <div class="col-lg-4 col-md-4 col-sm-6 auto web">
+            <div class="col-lg-4 col-md-4 col-sm-6 auto web inte">
                 <div class="h_gallery_item">
                     <div class="g_img_item" onclick="generateHtml('CovidToday', 'ReactJs, NodeJs, HTML, CSS, Bootstrap', 'covid', 'https://github.com/CovidToday/frontend', 'https://covidtoday.in/')">
-                        <img class="img-fluid"  src="img/gallery/covid.png" alt="">
-                        <a class="light"><img src="img/gallery/icon.png" alt=""></a>
+                        <img class="img-fluid"  src="img/gallery/covid.png" alt=""><br/>
+                <a id="intern">WORK EXPERIENCE</a>
+                <a class="light"><img src="img/gallery/icon.png" alt=""></a>
                     </div>
                     <div class="g_item_text">
                         <h4>CovidToday</h4>
@@ -501,11 +517,12 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-6 auto web app">
+            <div class="col-lg-4 col-md-4 col-sm-6 auto web app inte">
                 <div class="h_gallery_item">
-                    <div class="g_img_item" onclick="generateHtml('Website', 'ReactJs, NodeJs, FastAPI, SQLALCHEMY ', 'osdg', 'https://github.com/OSDG-IIITH/music-club-website')">
-                        <img class="img-fluid"  src="img/gallery/osdg.png" alt="">
-                        <a class="light"><img  src="img/gallery/icon.png" alt=""></a>
+                    <div class="g_img_item" onclick="generateHtml('Dynamic Website', 'ReactJs, NodeJs, FastAPI, SQLALCHEMY ', 'osdg', 'https://github.com/OSDG-IIITH/music-club-website')">
+                        <img class="img-fluid"  src="img/gallery/osdg.png" alt=""><br/>
+                <a id="intern">WORK EXPERIENCE</a>
+                <a class="light"><img  src="img/gallery/icon.png" alt=""></a>
                     </div>
                     <div class="g_item_text">
                         <h4>Dynamic Website</h4>
@@ -615,6 +632,7 @@
     <br id="van" />
     <br/>
   </section>
+  
 
   <div style="grid-column: inherit;">
         <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
