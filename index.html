@@ -13,7 +13,12 @@
   
     gtag('config', 'G-NKMND7032K');
   </script>
-
+  
+  <script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+  <script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
+  <script src="https://cdn.amcharts.com/lib/4/plugins/forceDirected.js"></script>
+  <script src="https://cdn.amcharts.com/lib/4/themes/dark.js"></script>
+  <script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
@@ -178,12 +183,13 @@
     <!-- <img class="archit_me" src="./img/mypro2.png" style="border-radius: 50%;"><br/><br/> -->
    
           <h3  class="archit_intro-subtitle"> Hey, I'm </h3>
-          <h1 class="intro-title mb-4" style="font-family: 'Satisfy', cursive;">Archit Jain</h1>
+          <h1 id="namana" class="intro-title mb-4" style="font-family: 'Satisfy', cursive;">Archit Jain</h1>
           <!-- <p class="intro-subtitle" style="font-family: 'Sacramento', cursive;"><span class="text-slider-items" >I am a sophomore at IIIT Hyderabad, pursuing a B.Tech in Computer Science and Enginnering.</span><strong class="text-slider"></strong></p> -->
           <hr style="border: 1px solid white; width: 40%;">
           <!-- <a class="intro-subtitle" style="font-family: 'Piedra', cursive;">I know little bit of </a>
           <a class="intro-subtitle" style="font-family: 'Piedra', cursive;" ><span class="text-slider-items" > C++ ., Bash ., JavaScript ., Python ., Git ., C ., Web Development .</span><strong class="text-slider"></strong></a> -->
-          <div class='console-container'>I know a little bit of <span id='text'></span><div class='console-underscore' id='console'>&#95;</div></div>
+          <div class='console-container' >I know a little bit of <span id='text'></span><div class='console-underscore' id='console'>&#95;</div></div>
+
           <span class="likebtn-wrapper" data-theme="custom"  data-site_id="60a430d9943ec91e3dc151d1" data-icon_l_c="#ffffff" data-icon_l_c_v="#ff0000" data-icon_d_c="#ffffff" data-icon_d_c_v="#ff0000" data-label_c="#ffffff" data-label_c_v="#ffffff" data-counter_l_c="#ffffff" data-counter_d_c="#ffffff" data-bg_c="#000000" data-counter_fs="b" data-ef_voting="grow" data-identifier="item_1" data-voting_frequency="24*60*60" data-counter_clickable="true" data-counter_frmt="comma" data-counter_count="true" data-lazy_load="true" data-loader_show="true"></span>
           <!-- <span><i id="moveDown"  class="fa fa-chevron-down fa-3x bounce"><h4 style="color: #fff; display:inline;margin: auto; padding:auto ; text-align: center;">Scroll Down</h4></i></span> -->
         </div>
@@ -291,6 +297,7 @@
   <br/>
 
   </div>
+  <!-- <div id="chartdiv"></div> -->
 
   <section id="skills" style="background-color: black;">
     <div>
@@ -690,6 +697,70 @@
     <!-- <div id="preloader" style="background-color: #000000;">
       <div class="preload preloader1"></div>
       <div class="preload preloader2"></div>
+      <div >
+        <svg id="preloader" width="240px" height="120px" viewBox="0 0 240 120" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          
+          <path id="loop-normal" class="st1" d="M120.5,60.5L146.48,87.02c14.64,14.64,38.39,14.65,53.03,0s14.64-38.39,0-53.03s-38.39-14.65-53.03,0L120.5,60.5
+        L94.52,87.02c-14.64,14.64-38.39,14.64-53.03,0c-14.64-14.64-14.64-38.39,0-53.03c14.65-14.64,38.39-14.65,53.03,0z">
+            <animate attributeName="stroke-dasharray" from="500, 50" to="450 50" begin="0s" dur="2s" repeatCount="indefinite" />
+            <animate attributeName="stroke-dashoffset" from="-40" to="-540" begin="0s" dur="2s" repeatCount="indefinite" />
+          </path>
+        
+          <path id="loop-offset" d="M146.48,87.02c14.64,14.64,38.39,14.65,53.03,0s14.64-38.39,0-53.03s-38.39-14.65-53.03,0L120.5,60.5L94.52,87.02c-14.64,14.64-38.39,14.64-53.03,0c-14.64-14.64-14.64-38.39,0-53.03c14.65-14.64,38.39-14.65,53.03,0L120.5,60.5L146.48,87.02z"></path>
+        
+          <path id="socket" d="M7.5,0c0,8.28-6.72,15-15,15l0-30C0.78-15,7.5-8.28,7.5,0z">
+            <animateMotion
+              dur="2s"
+              repeatCount="indefinite"
+              rotate="auto"
+              keyTimes="0;1"
+              keySplines="0.42, 0.0, 0.58, 1.0"
+            >
+              <mpath xlink:href="#loop-offset"/>
+            </animateMotion>
+          </path>
+          
+        <path id="plug" d="M0,9l15,0l0-5H0v-8.5l15,0l0-5H0V-15c-8.29,0-15,6.71-15,15c0,8.28,6.71,15,15,15V9z">
+          <animateMotion
+            dur="2s"
+            rotate="auto"
+            repeatCount="indefinite"
+            keyTimes="0;1"    
+            keySplines="0.42, 0, 0.58, 1"
+          >
+            <mpath xlink:href="#loop-normal"/>
+          </animateMotion>
+        </path>   
+          
+        </svg>
+        
+        
+        </div>
+        <style>
+              svg {
+                position: absolute;
+                width: 240px;
+                height: 120px;
+                top: 0; right: 0;
+                bottom: 0; left: 0; 
+                margin: auto;
+              }
+
+              svg #plug,
+              svg #socket {
+                fill:#fff;
+              }
+
+              svg #loop-normal {
+                fill: none;
+                stroke: #Fff;
+                stroke-width: 12;
+              }
+
+              svg #loop-offset {
+                display: none;
+              }
+        </style>
       <svg version="1.1" id="flash1" class="flash" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-223 25 512 512" style="enable-background:new -223 25 512 512;" xml:space="preserve">
       <style type="text/css">
         .st0{fill:#FFFFFF;stroke:#000000;stroke-miterlimit:10;}
@@ -734,6 +805,9 @@
 
 <!-- JavaScript Libraries -->
 <script src="js/main.js"></script>
+<script src="js/scramble.js"></script>
+<script src="js/dance.js"></script>
+<script src="js/cloud.js"></script>
 <script src="js/sk.js"></script>
 <script src="js/cot.js"></script>
 <!-- <script src="js/can.js"></script> -->

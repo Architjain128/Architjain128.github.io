@@ -17,6 +17,29 @@ body {
   font-family: 'Satisfy', cursive;
 }
 
+::-webkit-scrollbar {
+  width: 7px;
+  background-color:transparent;
+  padding-right: 10%;
+
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 20px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #0005; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #0008; 
+}
+
 
 h1,
 h2,
@@ -735,6 +758,13 @@ a:hover {
   font-size: xx-large;
   margin-left:20px;
   margin-top:10px;
+}
+
+#chartdiv {
+  background-color:#000;
+  width: 100%;
+  max-width: 100%;
+  height: 550px;
 }
 
 
