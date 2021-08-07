@@ -101,6 +101,8 @@ function generateHtml(title, tech, img, gh = "#", lnk = "#",demo="#"){
     let gh_shiz2 = ""
     let lnk_shiz = ""
     let lnk_shiz2 = ""
+    let you_shiz = ""
+    let you_shiz2 = ""
     let social_shiz = ""
 
 
@@ -108,31 +110,36 @@ function generateHtml(title, tech, img, gh = "#", lnk = "#",demo="#"){
         gh_shiz = `<a href="` + gh + `"><i class="fa fa-github fa-3x"></i></a><br/>`
     }
     if(gh != "#"){
-        gh_shiz2 = `<a> Source Code </a>`
+        gh_shiz2 = `<a> Source Code </a><br/>`
     }
     if(lnk != "#"){
         lnk_shiz = `<a href="` + lnk + `"><i class="fa fa-link fa-3x"></i></a><br/>`
     }
     if(lnk != "#"){
-        lnk_shiz2 = `<a> View Live </a>`
+        lnk_shiz2 = `<a> View Live </a><br/>`
     }
-    if(lnk_shiz != "" || gh_shiz != ""){
-        social_shiz = `<div class="social_icon">
-        ` + gh_shiz + gh_shiz2 + '<br/>' +lnk_shiz + lnk_shiz2 +
+    if(demo != "#"){
+        you_shiz = `<a href="` + demo + `"><i class="fa fa-youtube-play fa-3x"></i></a><br/>`
+    }
+    if(demo != "#"){
+        you_shiz2 = `<a> Demo Link </a><br/>`
+    }
+    if(lnk_shiz != "" || gh_shiz != "" ||you_shiz!="" ){
+        social_shiz = `<div class="social_icon">` 
+        + gh_shiz + gh_shiz2  +lnk_shiz + lnk_shiz2  +you_shiz + you_shiz2 +
         `</div>`;
     }
 
-  
-
     final = `
-            <div class="blog_right_sidebar">
+            <div class="blog_right_sidebar" >
                 <aside class="single_sidebar_widget author_widget">
-                    <!--<img class="author_img rounded-circle popup-img" src="img/gallery/` + img + `.png" alt="">-->
+                <div id="kj" style="width:300px,height:400px,overflow-y:auto">
                     <h4>` + title + `</h4>
                     <p>` + tech + `</p>
                     ` + social_shiz + `
                     <p>` + project_descriptions[img] + `</p>
                     <div class="br"></div>
+                </div>
                 </aside>
             </div>`
 
