@@ -62,34 +62,40 @@
 })(jQuery)
 
 let project_descriptions = {
-    "jodar": `<br/>A platform where job recruiters can post the jobs and applicants can apply for it and allow recruiters to shortlist/reject/accept their application based on applicant's skills and resume uploaded.`,
-    "amongthem": `<br/>A game inspired by Among Us where a player has to go from one exit to another in a randomly generated maze by staying away from an impostor who will move towards him from the shortest path possible.`,
-    "covid": `<br/>Worked as an Open-Source contributor for a multidisciplinary volunteer team on technology enabled response to the COVID19 pandemic in India.`,
-    "osdg": `<br/>Contributed as a Full stack developer for my college’s club website as a summer activity with a team of my batch mates under the mentorship of seniors.`,
-    "dbms": `<br/>A database project in MYSQL and has a CLI via python PyMySQL for a Hotel Management Company. It covers all CRUD operations for all entities with Normalization.`,
-    "xv6": `<br/>Tweaked the XV6 Operating System to add several new scheduling algorithms, namely first-cum-first-serve, priority-based and multi-level-feedback-queue, along with a couple of system calls.`,
-    "multi": `<br/>Used concepts of multi-threading, mutex locks, semaphores and process synchronization to implement two real-life systems simulating :
+  people: `<br/>People Counting System for Getting In/Out of a Bus Based on Video Processing`,
+  news: `<br/>Clickbait intensity prediction and its relevance to Fake News`,
+  jodar: `<br/>A platform where job recruiters can post the jobs and applicants can apply for it and allow recruiters to shortlist/reject/accept their application based on applicant's skills and resume uploaded.`,
+  amongthem: `<br/>A game inspired by Among Us where a player has to go from one exit to another in a randomly generated maze by staying away from an impostor who will move towards him from the shortest path possible.`,
+  covid: `<br/>Worked as an Open-Source contributor for a multidisciplinary volunteer team on technology enabled response to the COVID19 pandemic in India.`,
+  osdg: `<br/>Contributed as a Full stack developer for my college’s club website as a summer activity with a team of my batch mates under the mentorship of seniors.`,
+  dbms: `<br/>A database project in MYSQL and has a CLI via python PyMySQL for a Hotel Management Company. It covers all CRUD operations for all entities with Normalization.`,
+  xv6: `<br/>Tweaked the XV6 Operating System to add several new scheduling algorithms, namely first-cum-first-serve, priority-based and multi-level-feedback-queue, along with a couple of system calls.`,
+  multi: `<br/>Used concepts of multi-threading, mutex locks, semaphores and process synchronization to implement two real-life systems simulating :
     <ul>
     <li>Performance Scheduling in event management with the timed wait.</li>
     <li>Production and Distribution of Vaccines in different zones for vaccination of people arriving at random times.</li>
     </ul>`,
-    "shell": `<br/>A command-line interface based on the Unix Bash shell. Supports multiple commands per line, signal handling, and chained redirection and piping.`,
-    "joystick": `<br/>A two-player game like river crossing implemented using OOPS concepts. Has multiple stationery as well as moving obstacles like thorns and sharks with a time countdown for scoring.`,
-    "skyfall": `<br/>A 3D web-based game in which a player has a limited number of missiles that he can use to explode enemy planes and, it has to dodge a bunch of obstacles as the game progress.`,
-    "bestie": `<br/>A flutter based android app where users can call over the internet to a verified expert to discuss a listed specific topic and charged on per minute basis.`,
-    "kwazy":`<br/>A terminal-based python game similar to classic DX-Ball with a bunch of different powerups, obstacles and a modular object-oriented design.`,
-    "mlalgo":`<br/>Implemented various machine learning algorithms and their concepts as part of my course including, genetic algorithm, linear regression and analysis of bias-variance trends, value iteration, MDP and POMDP.`,
-    "health":`<br/>Currently developing a web-based Health Care app using MERN stack, which helps medical organisations in data collection with the help of medical assistance as well as help patients to track their medical reports.`
-}
+  shell: `<br/>A command-line interface based on the Unix Bash shell. Supports multiple commands per line, signal handling, and chained redirection and piping.`,
+  joystick: `<br/>A two-player game like river crossing implemented using OOPS concepts. Has multiple stationery as well as moving obstacles like thorns and sharks with a time countdown for scoring.`,
+  skyfall: `<br/>A 3D web-based game in which a player has a limited number of missiles that he can use to explode enemy planes and, it has to dodge a bunch of obstacles as the game progress.`,
+  bestie: `<br/>A flutter based android app where users can call over the internet to a verified expert to discuss a listed specific topic and charged on per minute basis.`,
+  kwazy: `<br/>A terminal-based python game similar to classic DX-Ball with a bunch of different powerups, obstacles and a modular object-oriented design.`,
+  mlalgo: `<br/>Implemented various machine learning algorithms and their concepts as part of my course including, genetic algorithm, linear regression and analysis of bias-variance trends, value iteration, MDP and POMDP.`,
+  health: `<br/>Currently developing a web-based Health Care app using MERN stack, which helps medical organisations in data collection with the help of medical assistance as well as help patients to track their medical reports.`,
+  wikisearch: `<br/>Wrote code to compress any Wikipedia dump to an inverted index of 1/5th the size. Can further process the index to return top matching results for any search query based on tf-idf score. Also supports field queries.`,
+};
 
 
 function henlo(txt, img){
     Swal.fire({
             html: txt,
+            heightAuto: false,
             showCloseButton: true,
             showConfirmButton: false,
             focusConfirm: false,
-            imageUrl: img
+            imageUrl: img,
+            animation: true,
+            imageHeight: 200,
         }
     )
 }
