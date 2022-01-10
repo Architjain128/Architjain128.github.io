@@ -62,8 +62,8 @@
 })(jQuery)
 
 let project_descriptions = {
-  people: `<br/>People Counting System for Getting In/Out of a Bus Based on Video Processing`,
-  news: `<br/>Clickbait intensity prediction and its relevance to Fake News`,
+  people: `<br/>Wrote an algorithm for counting number of people getting in or out of a bus using a recorded video by implementing motion estimation, harris corner detection and image segmentation.`,
+  news: `<br/>Built a model to predict the clickbait intensity and further using it to improve the fake news detection model by using spaCy vectorizer, BERT transformer, multiple regression and classification algorithms and ensemble learning methods. `,
   jodar: `<br/>A platform where job recruiters can post the jobs and applicants can apply for it and allow recruiters to shortlist/reject/accept their application based on applicant's skills and resume uploaded.`,
   amongthem: `<br/>A game inspired by Among Us where a player has to go from one exit to another in a randomly generated maze by staying away from an impostor who will move towards him from the shortest path possible.`,
   covid: `<br/>Worked as an Open-Source contributor for a multidisciplinary volunteer team on technology enabled response to the COVID19 pandemic in India.`,
@@ -82,7 +82,7 @@ let project_descriptions = {
   kwazy: `<br/>A terminal-based python game similar to classic DX-Ball with a bunch of different powerups, obstacles and a modular object-oriented design.`,
   mlalgo: `<br/>Implemented various machine learning algorithms and their concepts as part of my course including, genetic algorithm, linear regression and analysis of bias-variance trends, value iteration, MDP and POMDP.`,
   health: `<br/>Currently developing a web-based Health Care app using MERN stack, which helps medical organisations in data collection with the help of medical assistance as well as help patients to track their medical reports.`,
-  wikisearch: `<br/>Wrote code to compress any Wikipedia dump to an inverted index of 1/5th the size. Can further process the index to return top matching results for any search query based on tf-idf score. Also supports field queries.`,
+  wikisearch: `<br/>Wrote code to compress any Wikipedia dump to an inverted index of 1/5th of its size. Can further process the index to return top matching results for any search query based on tf-idf score. Also supports field queries.`,
 };
 
 

@@ -833,6 +833,7 @@ a:hover {
   z-index: 2;
   /* float: right; */
   margin-left: 10px;
+  margin-right: 10px;
   background-color: #fc3636;
   padding-top: 10px;
   padding-right: 20px;
@@ -854,8 +855,8 @@ a:hover {
   background-color: #fff;
   z-index: 1;
   margin-top: -10px;
-  margin-left: -3rem;
-  width: 75rem;
+  /* margin-left: -3rem; */
+  /* width: 75rem; */
   /* display: grid; */
 }
 .arc1{
